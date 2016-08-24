@@ -17,3 +17,6 @@ JavaFX allows a third state to checkBokx (other than on/off) but we have to enab
 because is disabled by default. The states name is undetermined, 
 implying that when enabled the checkBox will initially contain a dash.
 
+In Australia the date format is dd/MM/yy e.g 06/07/1963
+
+NOTE : TitlePane, despite its name is not a layout, it's control. 
