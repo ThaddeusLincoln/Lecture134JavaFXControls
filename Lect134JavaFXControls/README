@@ -1,0 +1,19 @@
+javafx.scene.Node is the base class for all Scene graph nodes. 
+Then the javafx.scene.control.Control is the base class for scene graph nodes that the user can interact with. 
+Implying the first that can be nodes in the scene that aren user interface nodes (there's 2 types of those).
+
+NOTE : every JavaFX control provides a default implementation of this interface (Skinnable) but if we'd wanted to, 
+we could subclass a control and override the methods in this interface or we could even create a custom control
+that implements this interface. 
+
+NOTE: Radio buttons in order to get them to work as expected, as they usually do, 
+we need to add them to a toggle group. The toggle group class doens't descend 
+from Node therefore it can't be added to a scene graph as such. So we need to find 
+the fx define in hte fxml to use this toggle group. In general we use "fx define"  
+when we have to add something in the fxml that isn't part of the scene graph. 
+When we're refering to a fx ide value we put a $sign in front of it. 
+
+JavaFX allows a third state to checkBokx (other than on/off) but we have to enable it, 
+because is disabled by default. The states name is undetermined, 
+implying that when enabled the checkBox will initially contain a dash.
+
